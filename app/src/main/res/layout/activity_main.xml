@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <!-- RecyclerView for displaying the series -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rV1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- RadioGroup for selecting the type of series -->
+
+        <!-- EditTexts for the first value and progressor of the series -->
+
+        <ToggleButton
+            android:id="@+id/tB1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton" />
+
+        <TextView
+            android:id="@+id/tV1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="index" />
+
+        <TextView
+            android:id="@+id/tV2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sum until the index" />
+
+        <EditText
+            android:id="@+id/eT1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberSigned|numberDecimal"
+            android:hint="First value"/>
+
+        <EditText
+            android:id="@+id/eT2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberSigned|numberDecimal"
+            android:hint="Progressor"/>
+
+        <!-- Button for updating the series -->
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="dori"
+            android:text="Update" />
+    </LinearLayout>
+
+</LinearLayout>
